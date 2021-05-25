@@ -12,15 +12,21 @@ import javax.validation.constraints.Size;
 @Setter
 public class MessageDto {
 
-    @NotNull(message = "Email не может быть пустым")
-    @Email(message = "не правильный формат почты")
-    String email;
+    @NotNull(message = "Фамилия не может быть пустым")
+    @Size(min = 2, message = "Минимальная длина строки 2 символова")
+    String lastName;
 
-    @NotNull(message = "Email не может быть пустым")
-    @Size(min = 5, message = "{Минимальная длина строки 5 символов}")
+    @NotNull(message = "Имя не может быть пустым")
+    @Size(min = 2, message = "Минимальная длина строки 2 символова")
+    String firstName;
+
+    @NotNull(message = "Тема не может быть пустой")
+    @Size(min = 5, message = "Минимальная длина строки 5 символов")
     String theme;
 
-    @NotNull(message = "Email не может быть пустым")
-    @Size(min = 5, message = "{Минимальная длина строки 10 символов}")
+    @NotNull(message = "Текст сообщения не может быть пустым")
+    @Size(min = 5, message = "Минимальная длина строки 10 символов")
     String textMessage;
+
+    String email;
 }

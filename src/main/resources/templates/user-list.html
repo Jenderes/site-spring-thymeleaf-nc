@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" type="text/css" href="../static/css/user-add.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
 </head>
 <body>
@@ -45,8 +44,8 @@
                 </thead>
                 <tbody>
                 <tr th:each="user : ${users}">
-                    <td th:text="${user.firstName}">Нет</td>
                     <td th:text="${user.lastName}">Нет</td>
+                    <td th:text="${user.firstName}">Нет</td>
                     <td th:text="${user.middleName}"> Нет</td>
                     <td th:text="${user.email}">Нет</td>
                     <td th:text="${user.age}">Нет</td>

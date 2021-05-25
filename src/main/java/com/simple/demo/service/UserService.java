@@ -1,14 +1,13 @@
 package com.simple.demo.service;
 
 import com.simple.demo.entity.User;
-import com.simple.demo.model.SearchDto;
 
 import java.util.List;
 
 public interface UserService {
-    boolean existUser(SearchDto searchDto);
+    boolean existUserByUserNameAndLastName(String firstName, String lastName);
 
-    User findUser(SearchDto searchDto);
+    User findUserByFirstNameAndLastName(String firstName, String lastName);
 
     void createUser(User user);
     

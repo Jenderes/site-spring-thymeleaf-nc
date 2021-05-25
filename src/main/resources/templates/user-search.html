@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" type="text/css" th:href="@{css/user-search.css}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
 </head>
 <body>
@@ -38,7 +39,65 @@
             <input type="submit" class="btn btn-primary btn btn-success btn-block mt-3" value="Поиск">
         </form>
         <div class="search_user">
-
+            <div th:if="${notFoundUser != null}" class="alert alert-danger notification" role="alert">
+                <p th:text="${notFoundUser}"></p>
+            </div>
+            <div class="find_user" th:if="${userSearch != null}">
+                <div class="leb">
+                    <div class="lab">
+                        Фамилия:
+                    </div>
+                    <div class="nam" th:text="${userSearch.lastName}"></div>
+                </div>
+                <div class="leb">
+                    <div class="lab">
+                        Имя:
+                    </div>
+                    <div class="nam" th:text="${userSearch.firstName}"></div>
+                </div>
+                <div class="leb">
+                    <div class="lab">
+                        Отчество:
+                    </div>
+                    <div class="nam" th:text="${userSearch.middleName}"></div>
+                </div>
+                <div class="leb">
+                    <div class="lab">
+                        Email:
+                    </div>
+                    <div class="nam" th:text="${userSearch.email}"></div>
+                </div>
+                <div class="leb">
+                    <div class="lab">
+                        Адрес:
+                    </div>
+                    <div class="nam" th:text="${userSearch.address}"></div>
+                </div>
+                <div class="leb">
+                    <div class="lab">
+                        Зарплата:
+                    </div>
+                    <div class="nam" th:text="${userSearch.salary}"></div>
+                </div>
+                <div class="leb">
+                    <div class="lab">
+                        Возраст:
+                    </div>
+                    <div class="nam" th:text="${userSearch.age}"></div>
+                </div>
+                <div class="leb">
+                    <div class="lab">
+                        Дата:
+                    </div>
+                    <div class="nam" th:text="${userSearch.date}"></div>
+                </div>
+                <div class="leb">
+                    <div class="lab">
+                        User Agent:
+                    </div>
+                    <div class="nam" th:text="${userSearch.userAgent}"></div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

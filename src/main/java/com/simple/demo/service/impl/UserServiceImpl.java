@@ -21,13 +21,13 @@ public class UserServiceImpl implements UserService {
     private final ObjectMapper objectMapper;
 
     @Override
-    public boolean existUser(SearchDto searchDto) {
-        return false;
+    public boolean existUserByUserNameAndLastName(String firstName, String lastName) {
+        return findUserByFirstNameAndLastName(firstName, lastName) != null;
     }
 
     @Override
-    public User findUser(SearchDto searchDto) {
-        return userRepository.findUserByFirstNameAndLastName(searchDto.getFirstName(), searchDto.getLastName());
+    public User findUserByFirstNameAndLastName(String firstName, String lastName) {
+        return userRepository.findUserByFirstNameAndLastName(firstName, lastName);
     }
 
     @Override

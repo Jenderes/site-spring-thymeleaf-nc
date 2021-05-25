@@ -1,7 +1,5 @@
-.body-menu{
-    width: 70%;
-    display: flex;
-}
-body{
-    background-color: aqua;
+.find_user {
+    font-size: 25px;
+    margin-top: 20px;
+    font-weight: bold;
 }
