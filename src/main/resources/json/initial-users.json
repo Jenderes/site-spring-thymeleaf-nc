@@ -1,0 +1,39 @@
+[
+  {
+    "firstName": "Сергей",
+    "middleName": "Васильевич",
+    "lastName": "Самойнов",
+    "age": 20,
+    "salary": 35000,
+    "email": "serveySaymonov@gmail.com",
+    "address": "Санкт-Петербург"
+  },
+  {
+    "firstName": "Виктор",
+    "middleName": "Спенович",
+    "lastName": "Чипелюк",
+    "age": 35,
+    "salary": 56000,
+    "email": "ChepelukViktor@mail.com",
+    "address": "Москва"
+  },
+  {
+    "firstName": "Алексей",
+    "middleName": "Анатольевич",
+    "lastName": "Персов",
+    "age": 25,
+    "salary": 40000,
+    "email": "PersovAleksey@gmail.com",
+    "address": "Нижний Новгород"
+  },
+  {
+    "firstName": "Николай",
+    "middleName": "Иванович",
+    "lastName": "Тремиков",
+    "age": 40,
+    "salary": 30000,
+    "email": "TremikovNikolay@mail.com",
+    "address": "Самара"
+  }
+
+]

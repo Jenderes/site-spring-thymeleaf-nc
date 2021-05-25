@@ -1,0 +1,7 @@
+.body-menu{
+    width: 70%;
+    display: flex;
+}
+body{
+    background-color: aqua;
+}
